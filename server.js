@@ -1,10 +1,10 @@
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 const express = require('express');
 const app = express();
 
-const trivia = require('./trivia');
-app.use('/', trivia);
+// const trivia = require('./trivia');
+// app.use('/', trivia);
 
 app.get('/test', (req, res) => {
 	res.json('Woo hoo');
